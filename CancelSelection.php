@@ -17,7 +17,7 @@ if ($errors ==0){
 	}
 }
 if ($errors ==0) {
-	$DBConnect = @mysql_connect("MSI", "root@localhost", "root");
+	$DBConnect = @mysql_connect("", "@localhost", "password");
 	if ($DBConnect === FALSE) {
 		$Body .= "<p>Unable to connect to the database " . " server. Error code " . mysql_errno() . ": " .
 		mysql_error() . "</p>\n";
